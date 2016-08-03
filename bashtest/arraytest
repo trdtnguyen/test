@@ -1,0 +1,12 @@
+#!/bin/bash
+
+example=(aa 'bb cc' dd)
+example[3]=ee
+
+#example[@] is look like the pointer to the array in C
+echo "example[@]=${example[@]}"
+echo "number of elements=${#example[@]}"
+
+for elt in ${example[@]}; do
+	echo " element = ${elt}"
+done

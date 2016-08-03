@@ -1,0 +1,12 @@
+#!/bin/bash
+echo  "Enter your name: "
+read name
+
+if [ -n "$name" ]; then
+	echo "Hello $name"
+	exit 0
+else
+	echo "Please input your name"
+	exit 0
+fi
+

@@ -1,0 +1,7 @@
+This program implements the textbook (naive) matrix multiplication algorithm.
+The algorithm mirrors the textbook definition of matrix multiplication in linear algebra.
+The algorithm has known performance issues (data cache misses and data translation lookaside buffer misses). 
+These issues slow down memory access.
+
+The program calls the user-space ARM11 performance counter functions in rpi_pmu.c. 
+It also calls utility functions in test_common.c. Thus, these source modules must be compiled and linked along with naive.c.
